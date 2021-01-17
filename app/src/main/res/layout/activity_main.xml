@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Kayıt!"
+        android:textSize="18dp"
+        android:id="@+id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle"
+        android:layout_margin="60dp"
+        android:id="@+id/edtName"
+        android:hint="İsim"/>
+<EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        android:id="@+id/edtPass"
+        android:hint="Şifre"/>
+<EditText
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtPass"
+        android:id="@+id/edtMail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="67dp"
+        android:hint="E mail:"
+        app:layout_constraintEnd_toStartOf="@+id/spEmail"/>
+<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:text="Giriş"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMail"/>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Hello Espresso!"
+        android:id="@+id/tvMessage"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+<Spinner
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:id="@+id/spEmail"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toEndOf="@+id/edtMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMessage"
+        app:layout_constraintTop_toTopOf="@+id/edtPass"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.461" app:layout_constraintVertical_bias="0.958"/>
+
+</android.support.constraint.ConstraintLayout>

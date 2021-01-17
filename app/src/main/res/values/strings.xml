@@ -1,0 +1,13 @@
+<resources>
+<string name="app_name">KotlinEspressoTutorial</string>
+<string name="greetButton">Hello Espresso!!</string>
+
+    <string-array name="spMail">
+        <item>\@hotmail.com</item>
+        <item>\@gmail.com</item>
+        <item>\@yahoo.com</item>
+        <item>\@windowslive.com</item>
+        <item>\@live.com</item>
+        <item>Diğer</item>
+    </string-array>
+</resources>
